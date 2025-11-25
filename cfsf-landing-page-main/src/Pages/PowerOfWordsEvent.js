@@ -25,7 +25,7 @@ const PowerOfWordsEvent = () => {
                     <div className="event-meta-modern">
                         <div className="meta-item">
                             <span className="meta-icon">📍</span>
-                            <span>3 Schools</span>
+                            <span>4 Schools</span>
                         </div>
                         <div className="meta-item">
                             <span className="meta-icon">📅</span>
@@ -33,7 +33,7 @@ const PowerOfWordsEvent = () => {
                         </div>
                         <div className="meta-item">
                             <span className="meta-icon">👥</span>
-                            <span>300+ Students Reached</span>
+                            <span>850+ Students Reached</span>
                         </div>
                     </div>
                 </div>
@@ -46,11 +46,11 @@ const PowerOfWordsEvent = () => {
                     {/* Quick Stats */}
                     <section className="stats-overview">
                         <div className="stat-box">
-                            <div className="stat-number-lg">3</div>
+                            <div className="stat-number-lg">4</div>
                             <div className="stat-label-lg">Schools Visited</div>
                         </div>
                         <div className="stat-box">
-                            <div className="stat-number-lg">300+</div>
+                            <div className="stat-number-lg">850+</div>
                             <div className="stat-label-lg">Students Impacted</div>
                         </div>
                         <div className="stat-box">
@@ -131,7 +131,7 @@ const PowerOfWordsEvent = () => {
                             <div className="timeline-item">
                                 <div className="timeline-marker">2</div>
                                 <div className="timeline-content">
-                                    <h3>Great Nicobeth Academy</h3>
+                                    <h3>Nichobeth</h3>
                                     <p className="work-org" style={{ color: '#2f931d', marginBottom: '1rem' }}>
                                         📅 May 22, 2024
                                     </p>
@@ -157,7 +157,7 @@ const PowerOfWordsEvent = () => {
                             <div className="timeline-item">
                                 <div className="timeline-marker">3</div>
                                 <div className="timeline-content">
-                                    <h3>Novelty Montessori School</h3>
+                                    <h3>Novelty Preparatory School</h3>
                                     <p className="work-org" style={{ color: '#2f931d', marginBottom: '1rem' }}>
                                         📅 May 24, 2024
                                     </p>
@@ -339,8 +339,8 @@ const PowerOfWordsEvent = () => {
                         <div className="conclusion-modern">
                             <h3>Lasting Impact</h3>
                             <p>
-                                The "Words Matter" outreach series across Child Passion Academy, Great Nicobeth Academy,
-                                and Novelty Montessori School was overwhelmingly successful. By addressing the power of
+                                The "Words Matter" outreach series across Child Passion Academy, Nichobeth,
+                                Novelty Preparatory School, and Pentagon Preparatory School was overwhelmingly successful. By addressing the power of
                                 words and their impact on emotional wellbeing, the events fostered awareness about emotional
                                 abuse, verbal bullying, and the importance of compassionate communication. The program not
                                 only touched the hearts of many students but also provided them with tools and resources to

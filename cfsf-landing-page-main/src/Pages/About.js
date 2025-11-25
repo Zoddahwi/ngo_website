@@ -28,7 +28,7 @@ export default function About() {
             </p>
             <div className='hero-stats'>
               <div className='stat-card'>
-                <div className='stat-number'>300+</div>
+                <div className='stat-number'>850+</div>
                 <div className='stat-label'>Lives Impacted</div>
               </div>
               <div className='stat-card'>
@@ -36,7 +36,7 @@ export default function About() {
                 <div className='stat-label'>Programs</div>
               </div>
               <div className='stat-card'>
-                <div className='stat-number'>3</div>
+                <div className='stat-number'>4</div>
                 <div className='stat-label'>Schools Reached</div>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function About() {
                   Educational programs teaching students about emotional wellbeing and mental health awareness.
                 </p>
                 <div className='card-badge highlight'>
-                  <span className='badge-text'>300+ Students Impacted</span>
+                  <span className='badge-text'>850+ Students Impacted</span>
                 </div>
               </div>
             </div>

@@ -16,7 +16,7 @@ const WhySupport = () => {
             icon: '🎓',
             title: 'School Outreach Programs',
             description: 'Reaching students in schools across Ghana with mental health education, emotional wellness training, and counseling support.',
-            impact: '300+ students impacted'
+            impact: '850+ students impacted'
         },
         {
             icon: '🏥',
@@ -45,8 +45,8 @@ const WhySupport = () => {
     ];
 
     const impactStats = [
-        { number: '3', label: 'Schools Reached', icon: '🏫' },
-        { number: '300+', label: 'Students Impacted', icon: '👨‍🎓' },
+        { number: '4', label: 'Schools Reached', icon: '🏫' },
+        { number: '850+', label: 'Students Impacted', icon: '👨‍🎓' },
         { number: '6', label: 'Trained Advocates', icon: '🎓' },
         { number: '2', label: 'Major Projects', icon: '🏗️' }
     ];

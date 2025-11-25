@@ -218,7 +218,7 @@ const EvelynProfile = () => {
                             </p>
                             <div className="foundation-highlights">
                                 <div className="highlight-item">
-                                    <span className="highlight-number">300+</span>
+                                    <span className="highlight-number">850+</span>
                                     <span className="highlight-label">Students Reached</span>
                                 </div>
                                 <div className="highlight-item">
@@ -226,7 +226,7 @@ const EvelynProfile = () => {
                                     <span className="highlight-label">Trained Advocates</span>
                                 </div>
                                 <div className="highlight-item">
-                                    <span className="highlight-number">3</span>
+                                    <span className="highlight-number">4</span>
                                     <span className="highlight-label">School Programs</span>
                                 </div>
                                 <div className="highlight-item">

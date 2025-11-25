@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Pages/LeaderProfile.css';
+import '../Pages/ProfileExtensions.css';
 
 const MaryTobbinOseiProfile = () => {
     return (

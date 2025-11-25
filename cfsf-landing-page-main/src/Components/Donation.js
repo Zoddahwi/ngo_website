@@ -130,7 +130,7 @@ const DonationContent = () => {
                 <div className='info-icon'>🎯</div>
                 <h3>Our Impact</h3>
                 <ul className='impact-list'>
-                  <li>300+ students reached in schools</li>
+                  <li>850+ students reached across 4 schools</li>
                   <li>6 trained mental health advocates</li>
                   <li>3 school outreach programs</li>
                   <li>2 major infrastructure projects</li>

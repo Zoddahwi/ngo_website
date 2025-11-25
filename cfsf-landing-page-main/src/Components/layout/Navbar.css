@@ -1,4 +1,4 @@
-/* Modern Navbar Styles */
+﻿/* Modern Navbar Styles */
 
 .modern-navbar {
     position: sticky;
@@ -43,7 +43,7 @@
 }
 
 .logo-image {
-    height: 85px;
+    height: 100px;
     width: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
@@ -351,7 +351,7 @@
 }
 
 .mobile-nav-link.active::after {
-    content: '→';
+    content: '';
     font-size: 1.2rem;
 }
 
@@ -461,16 +461,16 @@
 /* Responsive Design */
 @media (max-width: 767px) {
     .navbar-container {
-        padding: 0 1rem;
+        padding: 0 2rem !important;
     }
 
     .navbar-content {
-        height: 80px;
-        gap: 1rem;
+        height: 90px;
+        gap: 2rem;
     }
 
     .logo-image {
-        height: 65px;
+        height: 80px;
     }
 }
 

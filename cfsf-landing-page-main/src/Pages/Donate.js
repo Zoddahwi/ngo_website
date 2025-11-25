@@ -4,9 +4,9 @@ import Donation from '../components/Donation';
 import './Donate.css';
 
 const impactStats = [
-  { number: '300+', label: 'Students Reached', icon: '🎓' },
+  { number: '850+', label: 'Students Reached', icon: '🎓' },
   { number: '6', label: 'Trained Advocates', icon: '👥' },
-  { number: '3', label: 'School Programs', icon: '🏫' },
+  { number: '4', label: 'School Programs', icon: '🏫' },
   { number: '2', label: 'Major Projects', icon: '🏗️' }
 ];
 
@@ -20,8 +20,8 @@ const impactAreas = [
   {
     icon: '🎓',
     title: 'School Outreach',
-    description: 'Educational programs teaching students about emotional wellbeing and mental health awareness.',
-    impact: '300+ students impacted'
+    description: 'Educational programs teaching students about emotional wellbeing and mental health awareness across 4 schools: Nichobeth, Child Passion Academy, Pentagon Preparatory, and Novelty Preparatory School.',
+    impact: '850+ students impacted'
   },
   {
     icon: '🏥',
