@@ -1,0 +1,399 @@
+/* Additional Styles for Evelyn Profile Page */
+
+/* Education Grid Enhancements */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.education-item {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    border-color: #2f931d;
+    box-shadow: 0 8px 25px rgba(47, 147, 29, 0.2);
+}
+
+.education-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.education-item h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.institution {
+    font-size: 1rem;
+    color: #2f931d;
+    font-weight: 600;
+}
+
+/* Journey Card */
+.journey-card {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    padding: 3rem;
+    border-radius: 20px;
+    border-left: 5px solid #2f931d;
+}
+
+.journey-icon {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.journey-card h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1d5e14;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.journey-subtitle {
+    font-size: 1.2rem;
+    color: #2f931d;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.journey-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.journey-text strong {
+    color: #1d5e14;
+    font-weight: 700;
+}
+
+/* Impact Locations */
+.impact-locations {
+    margin-top: 2rem;
+}
+
+.location-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.location-icon {
+    font-size: 2rem;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.country-tag {
+    background: linear-gradient(135deg, #2f931d 0%, #1d5e14 100%);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Talents Grid */
+.talents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.talent-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.talent-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(47, 147, 29, 0.2);
+}
+
+.talent-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.talent-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.talent-card p {
+    font-size: 1.05rem;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Foundation Card */
+.foundation-card {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 2px solid #2f931d;
+}
+
+.foundation-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #1f2937;
+    margin-bottom: 2.5rem;
+}
+
+.foundation-text strong {
+    color: #1d5e14;
+    font-weight: 700;
+}
+
+.foundation-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.highlight-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2f931d;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-label {
+    display: block;
+    font-size: 1rem;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+/* Vision Mission Grid */
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.vm-card {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    padding: 2.5rem;
+    border-radius: 15px;
+    border-left: 5px solid #2f931d;
+}
+
+.vm-card h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1d5e14;
+    margin-bottom: 1.5rem;
+}
+
+.vm-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #1f2937;
+}
+
+/* Highlight Section */
+.highlight-section {
+    background: linear-gradient(135deg, #f0fdf4 0%, #e8f5e9 100%);
+    padding: 3rem;
+    border-radius: 20px;
+    margin: 3rem 0;
+}
+
+/* CTA Profile */
+.profile-cta {
+    background: linear-gradient(135deg, #2f931d 0%, #1d5e14 100%);
+    padding: 5rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.cta-content-profile h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.cta-content-profile p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    opacity: 0.95;
+}
+
+.cta-buttons-profile {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.cta-btn-profile {
+    padding: 1.25rem 2.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-btn-profile.primary {
+    background: white;
+    color: #2f931d;
+}
+
+.cta-btn-profile.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.cta-btn-profile.secondary {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 2px solid white;
+}
+
+.cta-btn-profile.secondary:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-3px);
+}
+
+/* Dark Mode Support */
+.dark .education-item {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.dark .education-item h3 {
+    color: #f1f5f9;
+}
+
+.dark .journey-card {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.dark .journey-card h3 {
+    color: #34d399;
+}
+
+.dark .journey-text {
+    color: #cbd5e1;
+}
+
+.dark .talent-card {
+    background: #1e293b;
+}
+
+.dark .talent-card h3 {
+    color: #f1f5f9;
+}
+
+.dark .talent-card p {
+    color: #cbd5e1;
+}
+
+.dark .foundation-card {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    border-color: #2f931d;
+}
+
+.dark .foundation-text {
+    color: #cbd5e1;
+}
+
+.dark .highlight-item {
+    background: #0f172a;
+}
+
+.dark .vm-card {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.dark .vm-card h3 {
+    color: #34d399;
+}
+
+.dark .vm-card p {
+    color: #cbd5e1;
+}
+
+.dark .location-item {
+    background: #1e293b;
+    color: #f1f5f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .talents-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .foundation-highlights {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vision-mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-card {
+        padding: 2rem;
+    }
+
+    .cta-buttons-profile {
+        flex-direction: column;
+    }
+
+    .cta-btn-profile {
+        width: 100%;
+    }
+}

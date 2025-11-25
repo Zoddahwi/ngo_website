@@ -1,8 +1,12 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+// Import our custom Sass modules
+@import "./Sass/main.scss";
 
 .logo {
-    width: 150px;  // Set your desired width
-    height: auto; // Maintain the aspect ratio
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
   }
+}

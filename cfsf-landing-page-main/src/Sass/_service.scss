@@ -6,7 +6,7 @@
   padding: 1rem 0.8rem;
 
   .container-sec {
-    width: 80%;
+    width: 90%; // widen container so cards get more width
     // background-color: slategray;
 
     @include mobile-sm {
@@ -15,7 +15,7 @@
     }
 
     @include media-lg {
-      width: 80%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -41,10 +41,15 @@
 
   h1 {
     color: $Dark_Blue;
+    font-size: 1.75rem; // base ~28px
+    line-height: 1.2;
+    text-align: left;
 
     @include mobile-md {
-      text-align: left;
-      font-size: 3rem;
+      font-size: 2.25rem; // ~36px
+    }
+    @include media-lg {
+      font-size: 2.5rem; // ~40px, closer to "Voices of Impact" scale
     }
   }
 
@@ -77,37 +82,56 @@
 
 .sec-items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  // justify-content: space-between;
-  margin-top: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem; // more breathing room for larger cards
+  margin-top: 2rem;
 
-  @include mobile-sm {
-    // width: 90%;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    // background-color: green;
-  }
-
-  @include mobile-md {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
+  // Let auto-fit handle 1–3 columns naturally; only force 4-up at large screens
 
   @include media-lg {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr); // 4-column layout on desktop
+    gap: 2rem;
   }
 
   .sec-item {
+    position: relative;
     display: flex;
     flex-direction: column;
-    background-color: rgb(236, 229, 229);
-    padding: 0.4rem;
-    transition: all 150ms ease-in-out;
-    box-shadow: 0px 3px 12px rgb(0, 0, 0, 15%);
+    background-color: #fff;
+  padding: 2.5rem; // increase base padding for larger feel
+  border-radius: 18px; // slightly more rounded
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: transform 0.35s cubic-bezier(.2,.7,.2,1), box-shadow 0.35s cubic-bezier(.2,.7,.2,1), border-color 0.35s;
+    transform-style: preserve-3d;
+    // apply live tilt transform (updated from JS via --tilt var)
+    transform: var(--tilt, none);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    outline: none;
+  min-height: 380px; // unified card size closer to testimonial cards
+
+    // thin animated gradient border overlay
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px; /* thin gradient border */
+      background: linear-gradient(135deg, rgba(46,125,50,0.12), rgba(67,160,71,0.0));
+  // Provide both standard and webkit mask properties
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude;
+      pointer-events: none;
+      transition: background .35s ease;
+    }
 
     &:hover {
-      transform: scale(1.03);
+      transform: translateY(-8px) scale(1.01) var(--tilt, none);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      border-color: rgba(46,125,50,0.22);
     }
+    &:hover::before { background: linear-gradient(135deg, rgba(46,125,50,0.24), rgba(67,160,71,0.10)); }
+    &:focus-visible { box-shadow: 0 0 0 3px rgba(67,160,71,0.35), 0 16px 36px rgba(18, 63, 28, 0.14); }
 
     @include mobile-sm {
       align-items: center;
@@ -117,46 +141,50 @@
     @include mobile-md {
       align-items: start;
       text-align: left;
-      border-radius: 15px;
+      border-radius: 16px;
     }
 
     @include media-lg {
       align-items: flex-start;
       text-align: left;
-      border-radius: 0;
-      background-color: white;
+      padding: 3rem; // larger on desktop
+      min-height: 460px;
     }
 
-    img {
-      padding: 1rem 0;
+    .card__icon {
+      width: 76px; height: 76px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: radial-gradient(50% 50% at 50% 50%, #dff5e2 0%, #edf8ef 100%);
+      position: relative; isolation: isolate; margin-bottom: 0.6rem;
+      img { width: 44px; height: 44px; display: block; }
+      &::after { content: ""; position: absolute; inset: -6px; border-radius: 50%; border: 2px solid rgba(67,160,71,0.35); transform: scale(.6); opacity: 0; transition: transform .5s ease, opacity .5s ease; }
     }
+    &:hover .card__icon::after, &:focus-visible .card__icon::after { transform: scale(1.1); opacity: 1; }
+    // Unified typography across all cards (match testimonial scale)
     h3 {
-      padding: 1rem 0;
+      padding: 0.5rem 0 0.75rem 0;
       color: $Dark_Blue;
-      @include mobile-md {
-        font-size: 2rem;
-      }
-      @include media-lg {
-        color: $Dark_Blue;
-        font-size: 1.5rem;
-      }
+      font-weight: 600;
+      font-size: 1.25rem; // 20px unified title size
+      line-height: 1.3;
     }
     p {
-      padding: 1rem 0;
+      padding: 0.25rem 0 0.5rem 0;
       color: rgb(98, 105, 105);
-      @include mobile-sm {
-        width: 80%;
-      }
-
-      @include mobile-md {
-        font-size: 1.3rem;
-        width: 100%;
-      }
-
-      @include media-lg {
-        width: 98%;
-        font-size: 1.2rem;
-      }
+      font-size: 1rem; // 16px unified body size
+      line-height: 1.6;
+      width: 100%;
     }
   }
+}
+
+/* Scroll reveal for cards */
+.reveal-on-scroll { opacity: 0; transform: translateY(14px); transition: transform .6s cubic-bezier(.2,.7,.2,1), opacity .6s ease; }
+.reveal-on-scroll.in-view { opacity: 1; transform: translateY(0); transition-delay: var(--reveal-delay, 0ms); }
+
+// Reduced motion: disable transitions/animations for accessibility
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll { opacity: 1; transform: none; transition: none; }
+  .sec-item { transition: none; transform: none; }
+  .sec-item:hover { transform: none; }
 }

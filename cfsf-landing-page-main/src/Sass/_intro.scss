@@ -23,6 +23,7 @@
       align-items: center;
       // background-color: red;
     }
+
     @include media-lg {
       flex-direction: row;
       width: 90%;
@@ -46,6 +47,7 @@
         // background-color: orange;
         margin-top: 2rem;
       }
+
       @include media-lg {
         order: 1;
         width: 50%;
@@ -67,6 +69,7 @@
           text-align: center;
           line-height: 1.3;
         }
+
         @include mobile-md {
           width: 85%;
           font-size: 3rem;
@@ -83,6 +86,7 @@
         width: 100%;
         padding-bottom: 1.5rem;
         color: gray;
+
         // background-color: blue;
         @include mobile-sm {
           padding: 0.7rem;
@@ -91,6 +95,7 @@
 
           // width: 90%;
         }
+
         @include mobile-md {
           width: 80%;
           font-size: 1.5rem;
@@ -106,93 +111,106 @@
       }
 
       .intro-btn {
-        // width: 50%;
-        background-image: linear-gradient(to right, #62cd13,  #1d8805);
+        background-image: linear-gradient(to right, #00a300, #008b00);
         color: $White;
-        padding: 0.7rem;
-        font-weight: 500;
+        padding: 0.8rem 2rem;
+        font-weight: 600;
         font-size: 1.2rem;
         border: none;
-        border-radius: 20px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 139, 0, 0.3);
 
-        &.intro-btn:hover {
-          opacity: 0.8;
+        &:hover {
+          opacity: 0.9;
+          transform: translateY(-3px);
+          box-shadow: 0 6px 20px rgba(0, 139, 0, 0.4);
+        }
+
+        &:active {
+          transform: translateY(-1px);
+        }
+
+        @include mobile-sm {
+          padding: 0.7rem 1.5rem;
+          font-size: 1rem;
         }
       }
     }
 
     // second Intro div with img
     .intro-img {
-      width: 60%;
-      // flex: 60%;
-      // background-color: skyblue;
-      background-image: url(./chance.svg);
-      background-size: cover;
-      background-position: 150px -150px;
-      background-repeat: no-repeat;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       position: relative;
-      min-height: 17.5rem;
+      min-height: 400px;
+      // Remove background SVG to avoid conflicts with actual image
+      // background-image: url(./chance.svg);
+      // background-size: cover;
+      // background-position: 150px -150px;
+      // background-repeat: no-repeat;
 
       // media query
       @include mobile-sm {
         width: 100%;
-        display: flex;
-        justify-content: center;
         order: 1;
-        background-size: 917px;
-        background-position: -171px -233px;
-        height: 30rem;
-        // background-color: rgb(189, 247, 247);
+        min-height: 300px;
+        padding: 1rem;
       }
+
       @include mobile-md {
         width: 100%;
-        background-position: 140px -273px;
+        min-height: 350px;
       }
 
       @include media-lg {
         order: 2;
-        width: 90%;
-        background-size: 150%;
-        background-position: -40px -250px;
-        height: 40rem;
+        width: 50%;
+        min-height: 450px;
       }
 
       .mock-img {
         width: 100%;
-        position: absolute;
-        top: -5rem;
         height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        // Remove absolute positioning to prevent image from being cut off
 
         @include mobile-sm {
-          top: -6rem;
-          padding-bottom: 2rem;
-          align-items: center;
-          justify-content: center;
-          display: flex;
-          height: 90%;
+          padding: 1rem 0;
           width: 100%;
-        }
-        @include max-nom {
-          top: -2rem;
-          width: 70%;
-          // background-color: red;
-        }
-
-        @include media-lg {
-          width: 150%;
-          top: 3.5rem;
-          right: 2.5rem;
         }
 
         @include mobile-md {
-          width: 59%;
+          width: 100%;
+        }
+
+        @include max-nom {
+          width: 100%;
+        }
+
+        @include media-lg {
+          width: 100%;
         }
 
         img {
-          width: 80%;
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          object-fit: contain;
+          display: block;
+
+          @include mobile-sm {
+            max-width: 90%;
+          }
 
           @include media-lg {
-            width: 200%;
+            max-width: 100%;
           }
         }
       }

@@ -1,4 +1,5 @@
-article {
+/* Scope article styles to the blog section only to avoid overriding other <article> elements (e.g., service cards) */
+article#blog {
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -40,63 +41,53 @@ article {
 
     .article {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      // background-color: teal;
-      column-gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2.25rem;
       width: 100%;
 
       @include mobile-sm {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        row-gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
       }
 
       @include mobile-md {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        row-gap: 1rem;
-        // background-color: yellow;
-        // justify-content: space-around;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
       }
 
       @include media-lg {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.25rem;
       }
     }
   }
 }
 
 .art-item {
-  width: 90%;
-  // height: 20rem;
-  margin: 0.7rem auto;
-  border-radius: 10px 10px 0 0;
+  width: 100%;
+  background: white;
+  border-radius: 16px; // match Testimonials rounded-2xl feel
   overflow: hidden;
   font-size: 1.2rem;
-  transition: all 150ms ease-in-out;
-  box-shadow: 0px 3px 12px rgb(0, 0, 0, 15%);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    transform: scale(1.05);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
 
-  img {
+  img,
+  video {
     width: 100%;
-    height: 13rem;
+    height: 12rem; // match testimonial card perceived height (Tailwind h-48)
+    object-fit: cover;
   }
 
   p {
     color: gray;
-    line-height: 1.4rem;
-    font-size: 1.1rem;
-
-    // padding: 1rem 0;
+    line-height: 1.6;
+    font-size: 1rem;
   }
 }
 
@@ -105,16 +96,25 @@ article {
 }
 
 .a-item {
-  padding: 0.7rem;
+  padding: 1.5rem;
   font-size: 1rem;
 
   h3 {
     margin: 0.8rem 0;
     color: $Dark_Blue;
+    font-size: 1.25rem;
+    line-height: 1.4;
   }
 
+  .author,
   .authur {
-    font-size: 14px;
-    color: $Dark_Blue;
+    font-size: 0.85rem;
+    color: $Grayish_Blue;
+    margin-bottom: 0.5rem;
+  }
+
+  .brief {
+    margin-top: 0.6rem;
+    font-size: 1.05rem;
   }
 }

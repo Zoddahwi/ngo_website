@@ -2,11 +2,15 @@
 @import "header";
 @import "intro";
 @import "service";
+@import "donation";
 @import "article";
 @import "footer";
+@import "errors";
+@import "effects";
 
 .App {
-  max-width: 1440px;
+  /* Allow full-bleed section backgrounds */
+  width: 100%;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;

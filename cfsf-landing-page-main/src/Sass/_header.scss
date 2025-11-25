@@ -4,9 +4,11 @@ header {
   background-color: white;
   display: flex;
   justify-content: center;
-  // margin-bottom: 2rem;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
 }
 
 .container {
@@ -20,26 +22,37 @@ header {
 
   // navbar css
   .navbar {
-    width: 40%;
+    width: 50%;
+    transition: all 0.3s ease;
 
     @include mobile-sm {
-      width: 100%;
+      width: 90%;
       position: absolute;
-      height: 60vh;
       top: 4.5rem;
-      left: 150%;
-      border-radius: 7px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-150%);
+      border-radius: 10px;
       background-color: $White;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      padding: 2rem 0;
+      opacity: 0;
+      visibility: hidden;
     }
 
     @include mobile-md {
-      width: 40%;
-      height: 0;
+      width: 50%;
       position: static;
+      transform: none;
+      box-shadow: none;
+      padding: 0;
+      opacity: 1;
+      visibility: visible;
     }
 
     &.active {
-      left: 0;
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+      visibility: visible;
     }
 
     .nav-items {
@@ -74,8 +87,16 @@ header {
 
       li {
         display: inline;
+        
         a {
           color: $Grayish_Blue;
+          transition: color 0.3s ease;
+          padding: 0.5rem 0;
+          display: inline-block;
+
+          &:hover {
+            color: $Dark_Blue;
+          }
         }
       }
     }
@@ -88,10 +109,18 @@ header {
     font-weight: 500;
     font-size: 1.2rem;
     border: none;
-    background-image: linear-gradient(to right, #62cd13,  #1d8805);
+  background-image: linear-gradient(to right, #00a300, #008b00);
+    cursor: pointer;
+    transition: all 0.3s ease;
 
-    &.nav-btn:hover {
-      opacity: 0.8;
+    &:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 139, 0, 0.3);
+    }
+
+    &:active {
+      transform: translateY(0);
     }
 
     @include mobile-sm {
@@ -106,6 +135,20 @@ header {
   // burger css
   .burger {
     display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      width: 24px;
+      height: auto;
+    }
 
     // media query
     @include mobile-sm {

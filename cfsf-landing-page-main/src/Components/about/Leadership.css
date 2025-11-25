@@ -1,0 +1,391 @@
+/* ============================================
+   LEADERSHIP SECTION - PREMIUM MODERN DESIGN
+   ============================================ */
+
+.leadership-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+}
+
+.leadership-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle at 25% 35%, rgba(16, 185, 129, 0.04) 1px, transparent 1px),
+        radial-gradient(circle at 75% 65%, rgba(52, 211, 153, 0.04) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+}
+
+.leadership-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+.leader-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.leader-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.03) 0%, rgba(52, 211, 153, 0.03) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.leader-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 60px rgba(16, 185, 129, 0.2);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.leader-card:hover::before {
+    opacity: 1;
+}
+
+.card-gradient-border {
+    height: 6px;
+    background: linear-gradient(90deg, #10b981 0%, #34d399 50%, #6ee7b7 100%);
+}
+
+.leader-header {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 2rem 1.5rem;
+}
+
+.profile-photo-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: all 0.5s ease;
+}
+
+.leader-card:hover .profile-photo {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px rgba(16, 185, 129, 0.3);
+}
+
+.photo-ring {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    background: linear-gradient(135deg, #10b981, #34d399, #6ee7b7) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.leader-card:hover .photo-ring {
+    opacity: 1;
+    animation: ringPulse 2s ease-in-out infinite;
+}
+
+@keyframes ringPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+.profile-initials {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+    transition: all 0.5s ease;
+}
+
+.leader-card:hover .profile-initials {
+    transform: scale(1.05) rotate(5deg);
+    box-shadow: 0 12px 32px rgba(16, 185, 129, 0.4);
+}
+
+.leader-content {
+    padding: 0 2rem 2.5rem;
+    text-align: center;
+}
+
+.leader-name {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.leader-card:hover .leader-name {
+    color: #10b981;
+}
+
+.leader-role {
+    font-size: 0.95rem;
+    color: #64748b;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.leader-bio {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.leader-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link.linkedin {
+    background: #0077b5;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.3);
+}
+
+.social-link.linkedin::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+}
+
+.social-link.linkedin:hover {
+    background: #005885;
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 119, 181, 0.5);
+}
+
+.social-link.linkedin:hover::before {
+    width: 100px;
+    height: 100px;
+}
+
+.profile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    color: white;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.profile-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.5);
+}
+
+.profile-link:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.profile-link span {
+    position: relative;
+    z-index: 1;
+}
+
+.profile-link svg {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.profile-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .leadership-section {
+        padding: 4rem 0;
+    }
+
+    .leaders-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .leader-content {
+        padding: 0 1.5rem 2rem;
+    }
+
+    .profile-photo-wrapper,
+    .profile-initials {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-initials {
+        font-size: 2rem;
+    }
+
+    .leader-name {
+        font-size: 1.3rem;
+    }
+
+    .leader-role {
+        font-size: 0.9rem;
+    }
+
+    .leader-bio {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .leadership-container {
+        padding: 0 1.5rem;
+    }
+
+    .leader-header {
+        padding: 2rem 1.5rem 1rem;
+    }
+
+    .leader-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .profile-link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Dark Mode */
+.dark .leadership-section {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.dark .leader-card {
+    background: #1e293b;
+    border-color: rgba(52, 211, 153, 0.1);
+}
+
+.dark .leader-card:hover {
+    border-color: rgba(52, 211, 153, 0.4);
+    box-shadow: 0 20px 60px rgba(52, 211, 153, 0.2);
+}
+
+.dark .leader-name {
+    color: #f8fafc;
+}
+
+.dark .leader-card:hover .leader-name {
+    color: #34d399;
+}
+
+.dark .leader-role {
+    color: #94a3b8;
+}
+
+.dark .leader-bio {
+    color: #cbd5e1;
+}
+
+.dark .profile-photo {
+    border-color: #1e293b;
+}

@@ -1,0 +1,572 @@
+/* Global Dark Mode Styles */
+
+/* Dark Mode Root Styles */
+.dark-mode {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+/* Dark Mode for All Pages */
+.dark body,
+.dark-mode {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+/* General Background Colors */
+.dark main,
+.dark-mode main {
+    background-color: #0f172a;
+}
+
+.dark section,
+.dark-mode section {
+    background-color: #0f172a;
+}
+
+/* White Sections in Dark Mode */
+.dark .bg-white,
+.dark-mode .bg-white {
+    background-color: #1e293b !important;
+}
+
+.dark .bg-gray-50,
+.dark-mode .bg-gray-50 {
+    background-color: #1e293b !important;
+}
+
+/* Event Pages Dark Mode */
+.dark .event-detail-page,
+.dark-mode .event-detail-page {
+    background: #0f172a;
+}
+
+.dark .event-modern-wrapper,
+.dark-mode .event-modern-wrapper {
+    background: #1e293b;
+}
+
+.dark .content-section,
+.dark-mode .content-section {
+    background: #0f172a;
+}
+
+.dark .content-section.bg-light,
+.dark-mode .content-section.bg-light {
+    background: #1e293b;
+}
+
+.dark .section-title-modern,
+.dark-mode .section-title-modern {
+    color: #f1f5f9;
+}
+
+.dark .content-card-modern,
+.dark-mode .content-card-modern {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark .info-card,
+.dark-mode .info-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark .outcome-item,
+.dark-mode .outcome-item {
+    background: #1e293b;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark .timeline-content,
+.dark-mode .timeline-content {
+    background: #1e293b;
+}
+
+.dark .timeline-content h3,
+.dark-mode .timeline-content h3,
+.dark .timeline-content h4,
+.dark-mode .timeline-content h4 {
+    color: #f1f5f9;
+}
+
+.dark .timeline-content p,
+.dark-mode .timeline-content p {
+    color: #cbd5e1;
+}
+
+/* Profile Pages Dark Mode */
+.dark .leader-profile-page,
+.dark-mode .leader-profile-page {
+    background: #0f172a;
+}
+
+.dark .profile-content-wrapper,
+.dark-mode .profile-content-wrapper {
+    background: #1e293b;
+}
+
+.dark .profile-section h2,
+.dark-mode .profile-section h2 {
+    color: #f1f5f9;
+}
+
+.dark .work-content h3,
+.dark-mode .work-content h3,
+.dark .education-item h3,
+.dark-mode .education-item h3 {
+    color: #f1f5f9;
+}
+
+.dark .work-content p,
+.dark-mode .work-content p {
+    color: #cbd5e1;
+}
+
+/* Contact Page Dark Mode */
+.dark .contact-page,
+.dark-mode .contact-page {
+    background: #0f172a;
+}
+
+.dark .contact-content-section,
+.dark-mode .contact-content-section {
+    background: #0f172a;
+}
+
+.dark .contact-info-card,
+.dark-mode .contact-info-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark .contact-info-card h3,
+.dark-mode .contact-info-card h3 {
+    color: #f1f5f9;
+}
+
+.dark .contact-info-card p,
+.dark-mode .contact-info-card p {
+    color: #cbd5e1;
+}
+
+.dark .contact-form-wrapper,
+.dark-mode .contact-form-wrapper {
+    background: #1e293b;
+}
+
+.dark .form-header h2,
+.dark-mode .form-header h2 {
+    color: #f1f5f9;
+}
+
+.dark .form-header p,
+.dark-mode .form-header p {
+    color: #cbd5e1;
+}
+
+.dark .form-group label,
+.dark-mode .form-group label {
+    color: #f1f5f9;
+}
+
+.dark .form-input,
+.dark-mode .form-input,
+.dark .form-textarea,
+.dark-mode .form-textarea {
+    background: #0f172a;
+    border-color: #334155;
+    color: #f1f5f9;
+}
+
+.dark .form-input::placeholder,
+.dark-mode .form-input::placeholder,
+.dark .form-textarea::placeholder,
+.dark-mode .form-textarea::placeholder {
+    color: #64748b;
+}
+
+.dark .sidebar-card,
+.dark-mode .sidebar-card {
+    background: #1e293b;
+}
+
+.dark .sidebar-card h3,
+.dark-mode .sidebar-card h3 {
+    color: #f1f5f9;
+}
+
+.dark .sidebar-card p,
+.dark-mode .sidebar-card p {
+    color: #cbd5e1;
+}
+
+.dark .social-link-modern,
+.dark-mode .social-link-modern {
+    background: #0f172a;
+    border-color: #334155;
+    color: #f1f5f9;
+}
+
+.dark .social-link-modern:hover,
+.dark-mode .social-link-modern:hover {
+    background: #1e293b;
+    border-color: #2f931d;
+}
+
+/* About Page Dark Mode */
+.dark .about-page,
+.dark-mode .about-page {
+    background: #0f172a;
+}
+
+.dark .about-section,
+.dark-mode .about-section {
+    background: #1e293b;
+}
+
+.dark .about-section h2,
+.dark-mode .about-section h2,
+.dark .about-section h3,
+.dark-mode .about-section h3 {
+    color: #f1f5f9;
+}
+
+.dark .about-section p,
+.dark-mode .about-section p {
+    color: #cbd5e1;
+}
+
+/* Article/News Cards Dark Mode */
+.dark .art-item,
+.dark-mode .art-item {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark .art-item h3,
+.dark-mode .art-item h3 {
+    color: #f1f5f9;
+}
+
+.dark .art-item p,
+.dark-mode .art-item p {
+    color: #cbd5e1;
+}
+
+.dark .a-item,
+.dark-mode .a-item {
+    background: #1e293b;
+}
+
+/* Blog Page Dark Mode */
+.dark .blog-page,
+.dark-mode .blog-page {
+    background: #0f172a;
+}
+
+.dark .blog-content-section,
+.dark-mode .blog-content-section {
+    background: #0f172a;
+}
+
+.dark .blog-card,
+.dark-mode .blog-card {
+    background: #1e293b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark .blog-card:hover,
+.dark-mode .blog-card:hover {
+    box-shadow: 0 8px 25px rgba(47, 147, 29, 0.3);
+}
+
+.dark .card-title,
+.dark-mode .card-title {
+    color: #f1f5f9;
+}
+
+.dark .card-excerpt,
+.dark-mode .card-excerpt {
+    color: #cbd5e1;
+}
+
+.dark .featured-card,
+.dark-mode .featured-card {
+    background: #1e293b;
+}
+
+.dark .featured-content,
+.dark-mode .featured-content {
+    background: #1e293b;
+}
+
+.dark .featured-title,
+.dark-mode .featured-title {
+    color: #f1f5f9;
+}
+
+.dark .featured-excerpt,
+.dark-mode .featured-excerpt {
+    color: #cbd5e1;
+}
+
+/* Stats and Results Dark Mode */
+.dark .stat-box,
+.dark-mode .stat-box {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark .stat-number-lg,
+.dark-mode .stat-number-lg {
+    color: #2f931d;
+}
+
+.dark .stat-label-lg,
+.dark-mode .stat-label-lg {
+    color: #cbd5e1;
+}
+
+.dark .result-card,
+.dark-mode .result-card {
+    background: #1e293b;
+}
+
+.dark .result-card h3,
+.dark-mode .result-card h3 {
+    color: #f1f5f9;
+}
+
+.dark .result-card p,
+.dark-mode .result-card p {
+    color: #cbd5e1;
+}
+
+/* Conclusion and CTA Dark Mode */
+.dark .conclusion-modern,
+.dark-mode .conclusion-modern {
+    background: #1e293b;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.dark .conclusion-modern h3,
+.dark-mode .conclusion-modern h3 {
+    color: #f1f5f9;
+}
+
+.dark .conclusion-modern p,
+.dark-mode .conclusion-modern p {
+    color: #cbd5e1;
+}
+
+/* Keep green buttons and accents visible in dark mode */
+.dark .btn-primary-modern,
+.dark-mode .btn-primary-modern,
+.dark .submit-button,
+.dark-mode .submit-button,
+.dark .emergency-button,
+.dark-mode .emergency-button {
+    background: linear-gradient(135deg, #2f931d 0%, #1d5e14 100%);
+    color: white;
+}
+
+.dark .btn-secondary-modern,
+.dark-mode .btn-secondary-modern {
+    background: #334155;
+    color: #f1f5f9;
+    border-color: #475569;
+}
+
+.dark .btn-secondary-modern:hover,
+.dark-mode .btn-secondary-modern:hover {
+    background: #475569;
+}
+
+/* Key Finding Boxes Dark Mode */
+.dark .key-finding-box,
+.dark-mode .key-finding-box {
+    background: #1e293b !important;
+    border-left-color: #2f931d !important;
+}
+
+.dark .key-finding-box h4,
+.dark-mode .key-finding-box h4 {
+    color: #f1f5f9 !important;
+}
+
+.dark .key-finding-box p,
+.dark-mode .key-finding-box p {
+    color: #cbd5e1 !important;
+}
+
+/* Highlight Cards Dark Mode */
+.dark .highlight-card,
+.dark-mode .highlight-card {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%) !important;
+    border-color: #2f931d !important;
+}
+
+.dark .highlight-card h3,
+.dark-mode .highlight-card h3 {
+    color: #2f931d !important;
+}
+
+.dark .highlight-card p,
+.dark-mode .highlight-card p {
+    color: #cbd5e1 !important;
+}
+
+/* Hours List Dark Mode */
+.dark .hours-item,
+.dark-mode .hours-item {
+    border-bottom-color: #334155;
+}
+
+.dark .day,
+.dark-mode .day {
+    color: #f1f5f9;
+}
+
+.dark .time,
+.dark-mode .time {
+    color: #2f931d;
+}
+
+/* Service Section Dark Mode */
+.dark .service,
+.dark-mode .service {
+    background: #0f172a;
+}
+
+.dark .sec-item,
+.dark-mode .sec-item {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+}
+
+.dark .card__title,
+.dark-mode .card__title {
+    color: #f1f5f9 !important;
+}
+
+.dark .card__body,
+.dark-mode .card__body {
+    color: #cbd5e1 !important;
+}
+
+/* General Text Elements */
+.dark h1,
+.dark-mode h1,
+.dark h2,
+.dark-mode h2,
+.dark h3,
+.dark-mode h3,
+.dark h4,
+.dark-mode h4 {
+    color: #f1f5f9;
+}
+
+.dark p,
+.dark-mode p,
+.dark li,
+.dark-mode li {
+    color: #cbd5e1;
+}
+
+/* Links in Dark Mode */
+.dark a:not(.btn-primary-modern):not(.btn-secondary-modern):not(.social-link-modern):not(.nav-link),
+.dark-mode a:not(.btn-primary-modern):not(.btn-secondary-modern):not(.social-link-modern):not(.nav-link) {
+    color: #34d399;
+}
+
+.dark a:not(.btn-primary-modern):not(.btn-secondary-modern):not(.social-link-modern):not(.nav-link):hover,
+.dark-mode a:not(.btn-primary-modern):not(.btn-secondary-modern):not(.social-link-modern):not(.nav-link):hover {
+    color: #2f931d;
+}
+
+/* Borders and Dividers */
+.dark .border-gray-100,
+.dark-mode .border-gray-100 {
+    border-color: #334155 !important;
+}
+
+.dark .border-gray-200,
+.dark-mode .border-gray-200 {
+    border-color: #334155 !important;
+}
+
+/* Shadows in Dark Mode */
+.dark .shadow-sm,
+.dark-mode .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.dark .shadow,
+.dark-mode .shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+/* Why Support Page Dark Mode */
+.dark .why-support-page,
+.dark-mode .why-support-page {
+    background: #0f172a;
+}
+
+.dark .support-container section,
+.dark-mode .support-container section {
+    background: #0f172a;
+}
+
+.dark .reason-card,
+.dark-mode .reason-card {
+    background: #1e293b;
+}
+
+.dark .reason-title,
+.dark-mode .reason-title {
+    color: #f1f5f9;
+}
+
+.dark .reason-description,
+.dark-mode .reason-description {
+    color: #cbd5e1;
+}
+
+.dark .stat-card,
+.dark-mode .stat-card {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.dark .testimonial-card,
+.dark-mode .testimonial-card {
+    background: #1e293b;
+}
+
+.dark .testimonial-text,
+.dark-mode .testimonial-text {
+    color: #cbd5e1;
+}
+
+.dark .giving-card,
+.dark-mode .giving-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.dark .giving-card:hover,
+.dark-mode .giving-card:hover {
+    background: #334155;
+}
+
+.dark .giving-type,
+.dark-mode .giving-type {
+    color: #f1f5f9;
+}
+
+.dark .giving-description,
+.dark-mode .giving-description {
+    color: #cbd5e1;
+}

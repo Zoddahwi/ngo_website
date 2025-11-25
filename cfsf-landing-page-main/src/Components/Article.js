@@ -1,82 +1,132 @@
-import React from "react";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Article = () => {
+  const navigate = useNavigate();
+
+  const handlePentagonClick = () => {
+    navigate('/event/pentagon-school-outreach');
+  };
+
+  const handlePowerOfWordsClick = () => {
+    navigate('/event/power-of-words-series');
+  };
+
+  const handleWorkshopClick = () => {
+    navigate('/event/mental-health-workshop');
+  };
+
+  const handleBridgeRehabClick = () => {
+    navigate('/news/bridge-rehab-projects');
+  };
+
   return (
-    <article>
-      <div className="art-container">
-        <h1>News and Events</h1>
-        <div className="article">
-          {/* Art item */}
-          <div className="art-item">
-            <video controls>
-              <source src="videos/CFS_video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="a-item">
-              <p className="author">By Claire Robinson</p>
-              <h3>The Need support to Children</h3>
-              <p className="brief">
-                The world is getting smaller and we’re becoming more mobile. So
-                why should you be forced to only receive money in a single …
-              </p>
+    <article id='blog'>
+      <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16'>
+        <div className='art-container'>
+          <h1>News and Events</h1>
+          <div className='article'>
+            {/* Bridge & Rehab Project News */}
+            <div className='art-item' onClick={handleBridgeRehabClick} style={{ cursor: 'pointer' }}>
+              <div style={{
+                background: 'linear-gradient(135deg, #2f931d 0%, #1d5e14 100%)',
+                height: '300px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white',
+                fontSize: '3rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+                padding: '2rem',
+                borderRadius: '10px 10px 0 0'
+              }}>
+                🌉🏥<br />
+                <span style={{ fontSize: '1.3rem' }}>Building Hope & Infrastructure</span>
+              </div>
+              <div className='a-item'>
+                <p className='author'>Announcement • Upcoming Projects 2025</p>
+                <h3>Bridge Construction & Rehabilitation Facility</h3>
+                <p className='brief'>
+                  Exciting news! CSF is embarking on two transformative infrastructure projects in Western
+                  Region: a community bridge and a mental health rehabilitation center...
+                </p>
+              </div>
+            </div>
+
+            {/* Mental Health Workshop Event */}
+            <div className='art-item' onClick={handleWorkshopClick} style={{ cursor: 'pointer' }}>
+              <div style={{
+                background: 'linear-gradient(135deg, #2f931d 0%, #1d5e14 100%)',
+                height: '300px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white',
+                fontSize: '3rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+                padding: '2rem',
+                borderRadius: '10px 10px 0 0'
+              }}>
+                🎓<br />
+                <span style={{ fontSize: '1.5rem' }}>Advocates Training</span>
+              </div>
+              <div className='a-item'>
+                <p className='author'>By CSF Team</p>
+                <h3>Mental Health Advocates Workshop</h3>
+                <p className='brief'>
+                  Equipping Mental Health Advocates with enhanced skills and support systems for effective
+                  program delivery - June 29, 2024...
+                </p>
+              </div>
+            </div>
+
+            {/* Power of Words Series Event */}
+            <div className='art-item' onClick={handlePowerOfWordsClick} style={{ cursor: 'pointer' }}>
+              <div style={{
+                background: 'linear-gradient(135deg, #2f931d 0%, #1d5e14 100%)',
+                height: '300px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'white',
+                fontSize: '3rem',
+                fontWeight: 'bold',
+                textAlign: 'center',
+                padding: '2rem',
+                borderRadius: '10px 10px 0 0'
+              }}>
+                💬<br />
+                <span style={{ fontSize: '1.5rem' }}>The Power of Words</span>
+              </div>
+              <div className='a-item'>
+                <p className='author'>By Mrs. Evelyn Benjamin-Sampson</p>
+                <h3>Outreach Series: The Power of Words</h3>
+                <p className='brief'>
+                  Words Matter; You Could Be Harming a Soul - A transformative 3-school outreach series
+                  in May 2024 teaching students about emotional wellbeing and the impact of words...
+                </p>
+              </div>
+            </div>
+
+            {/* Pentagon School Outreach Event */}
+            <div className='art-item' onClick={handlePentagonClick} style={{ cursor: 'pointer' }}>
+              <img src='images/pentagon_teaching_session.jpg' alt='Pentagon School Outreach Program' />
+              <div className='a-item'>
+                <p className='author'>By Deaconess Evelyn Benjamin Sampson</p>
+                <h3>Outreach Program at Pentagon School</h3>
+                <p className='brief'>
+                  The Chance for Souls Foundation conducted an inspiring outreach program at Pentagon School's Junior High Department, promoting mental health and wellbeing through faith…
+                </p>
+              </div>
             </div>
           </div>
-          {/* <div className="art-item">
-            <img src="images/image-currency.jpg" alt="Money art" />
-            <div className="a-item">
-              <p className="authur"> By Claire Robinson</p>
-              <h3> Receive money in any currency with no fees</h3>
-              <p className="brief">
-                The world is getting smaller and we’re becoming more mobile. So
-                why should you be forced to only receive money in a single …
-              </p>
-            </div>
-          </div> */}
-          {/* End of art item */}
-          {/* Art item */}
-          <div className="art-item">
-            <img src="images/image-restaurant.jpg" alt="Money art" />
-            <div className="a-item">
-              <p className="authur"> By Wilson Hutton</p>
-              <h3> Treat yourself without worrying about money Our</h3>
-              <p className="brief">
-                simple budgeting feature allows you to separate out your
-                spending and set realistic limits each month. That means you …
-              </p>
-            </div>
-          </div>
-          {/* End of art item */}
-          {/* Art item */}
-          <div className="art-item">
-            <img src="images/image-plane.jpg" alt="Money art" />
-            <div className="a-item">
-              <p className="authur">By Wilson Hutton</p>
-              <h3> Take your Easybank card wherever you go </h3>
-              <p className="brief">
-                We want you to enjoy your travels. This is why we don’t charge
-                any fees on purchases while you’re abroad. We’ll even show you …
-              </p>
-            </div>
-          </div>
-          {/* End of art item */}
-          {/* Art item */}
-          <div className="art-item">
-            <img src="images/image-confetti.jpg" alt="Money art" />
-            <div className="a-item">
-              <p className="authur">By Claire Robinson </p>
-              <h3> Our invite-only Beta accounts are now live!</h3>
-              <p className="brief">
-                After a lot of hard work by the whole team, we’re excited to
-                launch our closed beta. It’s easy to request an invite through
-                the site ...
-              </p>
-            </div>
-          </div>
-          {/* End of art item */}
         </div>
       </div>
     </article>
   );
 };
+
 
 export default Article;

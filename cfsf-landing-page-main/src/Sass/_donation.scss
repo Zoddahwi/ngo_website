@@ -1,0 +1,303 @@
+.donation {
+  width: 100%;
+  background: linear-gradient(135deg, #f0fff4 0%, #dcfce7 100%);
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+
+  @include mobile-sm {
+    padding: 2rem 1rem;
+  }
+
+  .donation-container {
+    width: 90%;
+    max-width: 1200px;
+
+    @include mobile-sm {
+      width: 100%;
+    }
+
+    @include media-lg {
+      width: 85%;
+    }
+  }
+
+  .donation-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @include mobile-sm {
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: $Dark_Blue;
+      margin-bottom: 1.5rem;
+
+      @include mobile-sm {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      @include mobile-md {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: $Grayish_Blue;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+
+      @include mobile-sm {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  .donation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+
+    @include mobile-sm {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @include mobile-md {
+      grid-template-columns: 1fr;
+    }
+
+    @include media-lg {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .donation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .info-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      @include mobile-sm {
+        padding: 1.5rem;
+      }
+
+      .info-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        color: $Dark_Blue;
+        margin-bottom: 1rem;
+
+        @include mobile-sm {
+          font-size: 1.3rem;
+        }
+      }
+
+      p {
+        color: $Grayish_Blue;
+        line-height: 1.6;
+        font-size: 1rem;
+      }
+
+  .impact-list {
+        list-style: none;
+        padding: 0;
+
+        li {
+          padding: 0.5rem 0;
+          color: $Grayish_Blue;
+          position: relative;
+          padding-left: 1.5rem;
+
+          &::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: $Lime_Green;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .donation-form-wrapper {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+    @include mobile-sm {
+      padding: 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: $Dark_Blue;
+      margin-bottom: 2rem;
+      text-align: center;
+
+      @include mobile-sm {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .donation-form {
+    .form-group {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: block;
+        font-weight: 600;
+        color: $Dark_Blue;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      textarea {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+        font-family: inherit;
+
+        &:focus {
+          outline: none;
+          border-color: $Lime_Green;
+        }
+
+        &::placeholder {
+          color: #aaa;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .radio-group {
+        display: flex;
+        gap: 2rem;
+        margin-top: 0.5rem;
+
+        @include mobile-sm {
+          gap: 1rem;
+        }
+
+        .radio-label {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          cursor: pointer;
+          font-weight: normal;
+
+          input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: $Lime_Green;
+          }
+
+          span {
+            font-size: 1rem;
+            color: $Dark_Blue;
+          }
+        }
+      }
+
+      .amount-suggestions {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        margin-top: 1rem;
+
+        @include mobile-sm {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .amount-btn {
+          padding: 0.6rem;
+          border: 2px solid $Lime_Green;
+          background: white;
+          color: $Lime_Green;
+          border-radius: 8px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          font-size: 1rem;
+
+          &:hover {
+            background: $Lime_Green;
+            color: white;
+          }
+        }
+      }
+    }
+
+  .submit-btn {
+      width: 100%;
+      padding: 1rem;
+  background-image: linear-gradient(to right, #00a300, #008b00);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.3s ease, transform 0.2s ease;
+      margin-top: 1rem;
+
+      &:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+
+      @include mobile-sm {
+        font-size: 1rem;
+        padding: 0.8rem;
+      }
+    }
+
+    .form-note {
+      text-align: center;
+      color: $Grayish_Blue;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
